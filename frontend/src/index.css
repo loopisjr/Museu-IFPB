@@ -4,6 +4,7 @@
   font-family: "Inter", sans-serif;
   line-height: 1.5;
   font-weight: 400;
+  color: #1D293D;
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
@@ -13,11 +14,23 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --primary-color: #366F2B;
+  --secondary-color: #09A43B;
+  --overlay: rgba(0, 0, 0, 0.15);
 }
 
-body {
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+
 
 
