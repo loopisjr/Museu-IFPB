@@ -1,11 +1,14 @@
-import Header from "./components/Header"
+import Layout from "./components/Layout"
+import Router from "./router"
+import { BrowserRouter } from "react-router"
 
 function App() {
   return (
-    <>
-    <Header />
-      museu
-    </>
+    <BrowserRouter>
+      <Layout>
+        <Router />
+      </Layout>
+    </BrowserRouter>
   )
 }
 
