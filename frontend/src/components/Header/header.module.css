@@ -3,12 +3,9 @@
   background: #366F2B;
 }
 
-
-
 .links {
   list-style: none;
 }
-
 
 .header>div,
 .links,
@@ -34,28 +31,6 @@
 .toggle {
   display: block;
 }
-
-.item {
-  color: var(--tertiary-color);
-  height: auto;
-  position: relative;
-  text-decoration: none;
-}
-
-.item::after {
-  content: "";
-  display: block;
-  width: 0%;
-  height: 2px;
-  background-color: transparent;
-  transition: 0.3s 0s;
-}
-
-.item:hover::after {
-  background-color: var(--secondary-color);
-  width: 100%;
-}
-
 
 @media (min-width: 768px) {
 

@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import chevron from '../../assets/icons/chevron-down.svg'
 import style from "./dropdown.module.css"
-import { Link } from 'react-router'
+import LinkHeader from '../LinkHeader'
 
 export default function Dropdown() {
   const [isOpen, setIsOpen] = useState(false)
@@ -20,15 +20,9 @@ export default function Dropdown() {
 
       <div className={`${style.dropdownBody} ${dropdownStateClass}`}>
         <ul className={style.links}>
-          <li>
-            <Link className={style.item} to="/" >Cidade de Cajazeiras</Link>
-          </li>
-          <li>
-            <Link className={style.item} to="/" >Histórico do campus</Link>
-          </li>
-          <li>
-            <Link className={style.item} to="/" >Galeria de diretores</Link>
-          </li>
+          <LinkHeader label="Cidade de Cajazeiras" path="/cidade-cajazeiras" type="dropdown" />
+          <LinkHeader label="Histórico do campus" path="/historico-campus" type="dropdown" />
+          <LinkHeader label="Galeria de diretores" path="/galeria-diretores" type="dropdown" />
         </ul>
       </div>
     </div>

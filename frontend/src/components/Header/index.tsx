@@ -1,9 +1,9 @@
-import { Link } from 'react-router'
 import Logo from '../Logo'
 import style from './header.module.css'
 import Dropdown from '../Dropdown'
 import menuIcon from '../../assets/icons/menu.svg'
 import { useState } from 'react'
+import LinkHeader from '../LinkHeader'
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false)
@@ -21,18 +21,15 @@ export default function Header() {
           <img className={style.toggle} src={menuIcon} onClick={handleToggle}/>
         </div>
         <ul className={`${style.links} ${headerStateClass}`}>
-          <li>
-            <Link className={style.item} to="/" >Home</Link>
-          </li>
+          <LinkHeader label="Home" path="/" />
           <li>
             <Dropdown />
           </li>
-          <li>
-            <Link className={style.item} to="/as" >Home</Link>
-          </li>
-          <li>
-            <Link className={style.item} to="/" >Home</Link>
-          </li>
+          <LinkHeader label="Linha do tempo" path="/linha-do-tempo" />
+          <LinkHeader label="Galeria" path="/galeria" />
+          <LinkHeader label="Questionario" path="/questionario" />
+          <LinkHeader label="Obras" path="/obras" />
+          <LinkHeader label="Autor" path="/autor" />
         </ul>
       </div>
     </header>
