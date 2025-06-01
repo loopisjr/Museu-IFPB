@@ -17,6 +17,8 @@
 
   --primary-color: #366F2B;
   --secondary-color: #09A43B;
+  --secondary-background: #FAFAFA;
+  --secondary-text: #1D293D;
   --overlay: rgba(0, 0, 0, 0.15);
 }
 
