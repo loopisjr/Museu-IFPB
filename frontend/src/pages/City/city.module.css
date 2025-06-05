@@ -1,0 +1,15 @@
+.conteudo{
+    margin: 0 200px;
+
+}
+
+.centralizar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  margin: 35px auto;
+  text-align: center;
+}
