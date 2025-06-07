@@ -1,6 +1,9 @@
 .header {
-  padding: 16px;
   background: #366F2B;
+}
+
+.header>div {
+  padding: 16px;
 }
 
 .links {
