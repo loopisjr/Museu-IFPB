@@ -7,6 +7,7 @@ export default function Timeline({ items }: { items: { element: React.ReactEleme
       <div className={style.bar}></div>
       {items.map((item, index) => {
         return <>
+          <span className={style.mobileYear}>{item.date}</span>
           {index % 2 === 0 ? <div className={style.leftSideItem}>{item.element}</div> : null}
           <span className={style.year}>{item.date}</span>
           {index % 2 === 1 ? <div className={style.rightSideItem}>{item.element}</div> : null}
