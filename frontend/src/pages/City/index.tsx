@@ -2,6 +2,7 @@ import style from "./city.module.css"
 
 import BannerCajazeiras from "../../components/BannerCajazeiras"
 import ImageDescription from "../../components/ImageDescription";
+import Reference from "../../components/Reference";
 import Quote from "../../components/Quote/Quote";
 import Title from "../../components/Title";
 
@@ -18,13 +19,13 @@ import Paragraph from "../../components/Paragraph/Paragraph";
 export default function City() {
   return (
     <div>
-        <BannerCajazeiras title="Cajazeiras" subtitle=""
+        <BannerCajazeiras title="Cajazeiras" subtitle="A cidade que ensinou a Paraíba a ler"
         description={textoBanner} pictureURL="./src/assets/images/banner_cajazeiras.png"
         horizontal_padding="200px"/>
 
         <div className={style.conteudo}>
-            <Title content="A cidade de Cajazeiras"></Title>
-
+            <Title content="Contextualização" margin="60px 0 40px"></Title>
+            
             <Paragraph>
                 <p>
                     Essas terras foram, por meio de uma sesmaria, doadas a Francisco Gomes Brito e 
@@ -184,9 +185,16 @@ export default function City() {
                     uma Escola Cidadã Integral Técnica (ECIT), um centro universitário, duas faculdades particulares, além 
                     de faculdades que oferecem Educação a Distância (EAD), com polo na cidade.
                 </p>
-            </Paragraph>            
+            </Paragraph>
+
+            <Reference>
+                <li><strong>CAJAZEIRAS. Prefeitura Municipal. Dados do município – origem. [Cajazeiras]: [s.n.], [2020?]. Disponível em: https://cajazeiras.pb.gov.br/omunicipio.php. Acesso em: 16 dez. 2024.</strong></li>
+                <li><strong>CRUZ, Ana Paula da; ALVES, Ildegarde Elouise; GONÇALVES, Hegildo Holanda. Encontros de memórias: trajetórias do Campus Cajazeiras em seus 30 anos. João Pessoa: Editora IFPB, 2024.</strong></li>
+                <li><strong>INSTITUTO BRASILEIRO DE GEOGRAFIA E ESTATÍSTICA. Censo brasileiro de 2022: Cajazeiras. Cajazeiras: IBGE, 2024. Disponível em: https://cidades.ibge.gov.br/brasil/pb/cajazeiras/panorama. Acesso em: 16 dez. 2024.</strong></li>
+                <li><strong>LEITÃO, Deusdedit. Vida e Obra do Padre Rolim: Edição comemorativa aos 200 anos de nascimento do Padre Inácio de Sousa Rolim. Brasília: Senado Federal, 2000.</strong></li>
+                <li><strong>SOUZA, Antônio José de. CAJAZEIRAS: Nas Crônicas de um Mestre - Escola. João Pessoa: Editora Universitária, 1981.</strong></li>
+            </Reference>
         </div>
-        
     </div>
   )
 }

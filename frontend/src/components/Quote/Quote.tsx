@@ -12,6 +12,7 @@ export default function Quote({ children }: QuoteProps) {
       margin: "5% 20%",
       fontStyle: "italic",
       color: "#555",
+      textAlign: 'justify'
     }}>
       {children}
     </blockquote>
