@@ -4,9 +4,10 @@ import { useLocation } from "react-router"
 interface props {
   label: string,
   path: string,
-  type?: string
+  type?: string,
+  onClick?: () => void
 }
-export default function LinkHeader({label, path, type}: props) {
+export default function LinkHeader({label, path, type, onClick}: props) {
   const location = useLocation()
   const isActive = location.pathname === path
 
@@ -16,7 +17,7 @@ export default function LinkHeader({label, path, type}: props) {
   const liStyle = type === "dropdown" ? style.li : "";
 
   return (
-    <li className={liStyle}>
+    <li onClick={onClick} className={liStyle}>
       <Link className={`${style.item} ${linkStyle}`} to={path} >{label}</Link>
     </li>
   )

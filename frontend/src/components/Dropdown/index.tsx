@@ -7,6 +7,10 @@ export default function Dropdown() {
   const [isOpen, setIsOpen] = useState(false)
 
   const dropdownStateClass = isOpen ? style.dropdownActived : style.dropdownDesactived
+
+  function closeDropdown() {
+    setIsOpen(false)
+  }
   return (
     <div className={style.dropdownRoot}>
       <div >
@@ -20,9 +24,9 @@ export default function Dropdown() {
 
       <div className={`${style.dropdownBody} ${dropdownStateClass}`}>
         <ul className={style.links}>
-          <LinkHeader label="Cidade de Cajazeiras" path="/cidade-cajazeiras" type="dropdown" />
-          <LinkHeader label="Histórico do campus" path="/historico-campus" type="dropdown" />
-          <LinkHeader label="Galeria de diretores" path="/galeria-diretores" type="dropdown" />
+          <LinkHeader onClick={closeDropdown} label="Cidade de Cajazeiras" path="/cidade-cajazeiras" type="dropdown" />
+          <LinkHeader onClick={closeDropdown} label="Histórico do campus" path="/historico-campus" type="dropdown" />
+          <LinkHeader onClick={closeDropdown} label="Galeria de diretores" path="/galeria-diretores" type="dropdown" />
         </ul>
       </div>
     </div>
