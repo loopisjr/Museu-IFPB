@@ -18,13 +18,13 @@ import Paragraph from "../../components/Paragraph/Paragraph";
 export default function City() {
   return (
     <div>
-        <BannerCajazeiras title="Cajazeiras" subtitle=""
+        <BannerCajazeiras title="Cajazeiras" subtitle="A cidade que ensinou a Paraíba a ler"
         description={textoBanner} pictureURL="./src/assets/images/banner_cajazeiras.png"
         horizontal_padding="200px"/>
 
         <div className={style.conteudo}>
-            <Title content="A cidade de Cajazeiras"></Title>
-
+            <Title content="Contextualização" margin="60px 0 40px"></Title>
+            
             <Paragraph>
                 <p>
                     Essas terras foram, por meio de uma sesmaria, doadas a Francisco Gomes Brito e 
@@ -184,9 +184,8 @@ export default function City() {
                     uma Escola Cidadã Integral Técnica (ECIT), um centro universitário, duas faculdades particulares, além 
                     de faculdades que oferecem Educação a Distância (EAD), com polo na cidade.
                 </p>
-            </Paragraph>            
+            </Paragraph>
         </div>
-        
     </div>
   )
 }

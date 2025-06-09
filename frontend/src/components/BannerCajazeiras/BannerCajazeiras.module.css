@@ -8,6 +8,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    gap: 6%;
 }
 
 .title {
@@ -16,6 +17,7 @@
 
 .subtitle {
     margin-top: 0;
+    margin-bottom: 20px;
 }
 
 .leftBorder {
@@ -24,7 +26,7 @@
 }
 
 .textBlock {
-    width: 37%;
+    width: auto;
 }
 
 .content {
@@ -33,6 +35,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-align: justify;
     color: var(--secondary-text);
 
     border: 0;
@@ -48,7 +51,7 @@
     height: auto;
 }
 
-@media (max-width: 1080px) {
+@media (max-width: 1280px) {
     .textBlock {
         width: 100%;
         margin-bottom: 20px;
