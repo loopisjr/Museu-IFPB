@@ -10,10 +10,11 @@
   padding-block: 0.5rem;
   gap: 0.5rem;
   height: 100%;
+  padding-inline: 1.5rem;
 }
 
 .content > * {
-  margin: 0 auto;
+  margin: 0 auto !important;
 }
 
 .subtitle {
