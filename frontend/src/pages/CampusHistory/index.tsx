@@ -1,5 +1,4 @@
 import Title from "../../components/Title"
-import { useEffect, useState } from "react";
 import ImageDescription from "../../components/ImageDescription"
 import Paragraph from "../../components/Paragraph/Paragraph";
 import Quote from "../../components/Quote/Quote";
@@ -16,18 +15,10 @@ import Figura10 from '../../assets/images/CampusHistory/Figura10.png';
 import Figura11 from '../../assets/images/CampusHistory/Figura11.png';
 import Figura12 from '../../assets/images/CampusHistory/Figura12.png';
 
+import styles from "./CampusHistory.module.css";
 export default function CampusHistory() {
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    const checkMobile = () => setIsMobile(window.innerWidth <= 768);
-    checkMobile();
-    window.addEventListener("resize", checkMobile);
-    return () => window.removeEventListener("resize", checkMobile);
-  }, []);
-
   return (
-    <div style={{ padding: "40px 5vw", maxWidth: "1400px", margin: "0 auto" }}>
+    <div className={styles.container}>
       <Title content="Breve Histórico" />
       <h3>Instituto Federal da Paraíba - Campus Cajazeiras</h3>
 
@@ -36,65 +27,61 @@ export default function CampusHistory() {
       </Paragraph>
 
       <Paragraph>
-        As Escolas de Aprendizes Artífices foram criadas pelo Decreto nº 7.566/1909, do então presidente da República Nilo Peçanha. A instituição foi instalada na Paraíba em 5 de janeiro de 1910, passando a funcionar no prédio do Primeiro Batalhão da Polícia Militar do Estado, localizado na Praça Pedro Américo, centro de João Pessoa, PB.
+        As Escolas de Aprendizes Artífices foram criadas pelo Decreto nº 7.566/1909, do então presidente da República Nilo Peçanha. A instituição
+        foi instalada na Paraíba em 5 de janeiro de 1910, passando a funcionar no prédio do Primeiro Batalhão da Polícia Militar do Estado, localizado
+        na Praça Pedro Américo, centro de João Pessoa, PB.
       </Paragraph>
 
-      {isMobile && (
-        <div style={{ margin: "20px auto", maxWidth: "500px" }}>
-          <ImageDescription
-            pictureURL={Figura1}
-            width="100%"
-            description="Figura 1: Instalação da Escola de Aprendizes e Artífices da Paraíba em 1910."
-          />
-        </div>
-      )}
+      <div className={styles.imageCenter}>
+        <ImageDescription
+          pictureURL={Figura1}
+          width="100%"
+          description="Figura 1: Instalação da Escola de Aprendizes e Artífices da Paraíba em 1910."
+        />
+      </div>
 
-      {!isMobile && (
-        <div style={{ margin: "20px 0", maxWidth: "500px", float: "right", marginLeft: "40px" }}>
-          <ImageDescription
-            pictureURL={Figura1}
-            width="100%"
-            description="Figura 1: Instalação da Escola de Aprendizes e Artífices da Paraíba em 1910."
-          />
-        </div>
-      )}
-      
       <Paragraph>
-        Como essas escolas foram criadas apenas nas capitais brasileiras, a Escola Paraibana funcionou por mais de setenta anos somente na capital, João Pessoa. Durante esse período, sua nomenclatura foi sendo alterada: em 1937, passou a se chamar Liceu Industrial; em 1942, Escola Industrial de João Pessoa; nos anos 60, Escola Técnica Federal da Paraíba; em 1999, Centro Federal de Educação Tecnológica; e, finalmente, em 2008, passou a se chamar Instituto Federal da Paraíba.
+        Como essas escolas foram criadas apenas nas capitais brasileiras, a Escola Paraibana funcionou por mais de setenta anos somente na capital,
+        João Pessoa. Durante esse período, sua nomenclatura foi sendo alterada: em 1937, passou a se chamar Liceu Industrial; em 1942, Escola Industrial
+        de João Pessoa; nos anos 60, Escola Técnica Federal da Paraíba; em 1999, Centro Federal de Educação Tecnológica; e, finalmente, em 2008,
+        passou a se chamar Instituto Federal da Paraíba.
       </Paragraph>
 
       <Paragraph>
-        No ano de 1984, o então deputado federal cajazeirense Edme Tavares teve a ideia de implantar um campus da Escola Técnica da Paraíba (ETFPB) na cidade de Cajazeiras, funcionando como Unidade de Ensino Descentralizada (UNED). O então prefeito da cidade de Cajazeiras, Epitácio Leite Rolim, enviou, na data de 13 de janeiro de 1987, um ofício ao diretor da ETFPB, professor Espedito Pereira, demonstrando o grande interesse que a cidade tinha na implantação daquela grandiosa obra.
+        No ano de 1984, o então deputado federal cajazeirense Edme Tavares teve a ideia de implantar um campus da Escola Técnica da Paraíba (ETFPB) na
+        cidade de Cajazeiras, funcionando como Unidade de Ensino Descentralizada (UNED). O então prefeito da cidade de Cajazeiras, Epitácio Leite Rolim,
+        enviou, na data de 13 de janeiro de 1987, um ofício ao diretor da ETFPB, professor Espedito Pereira, demonstrando o grande interesse que a
+        cidade tinha na implantação daquela grandiosa obra.
       </Paragraph>
 
+      <Paragraph>
+        A Figura 2 apresenta o Ofício nº 18/87 da Prefeitura Municipal de Cajazeiras-PB, oficializando o interesse do município na implantação da Escola 
+        Técnica Federal da Paraíba e fazendo a doação de uma área de 3,9 hectares (39.000 m²), destinada à construção da referida unidade escolar.
+      </Paragraph>
 
-      {/* Segunda imagem */}
-      <div style={{ margin: "40px auto", width: "500px" }}>
+      <div className={styles.imageCenter}>
         <ImageDescription
           pictureURL={Figura2}
           width="100%"
           description="Figura 2: Ofício da Prefeitura Municipal de Cajazeiras."
         />
       </div>
-      
-      <Paragraph>
-        Nas palavras de Cruz (2021, p. 10-11):
-      </Paragraph>
+
+      <Paragraph>Nas palavras de Cruz (2021, p. 10-11):</Paragraph>
 
       <Quote>
-        O Instituto Federal de Educação, Ciência e Tecnologia da Paraíba, Campus Cajazeiras, é fruto das aspirações da sociedade dos sertões do Rio Piranhas por conhecimento humano, 
-        profissionalizante, científico e tecnológico. A realização desse desejo iniciou-se por meio do Projeto de Lei n° 3305-A de 1984, implementado pelo então deputado federal Edme 
-        Tavares. Em 04 de dezembro de 1994, as portas se abrem: aconteceu a inauguração da Unidade de Ensino Descentralizada, sediada na cidade de Cajazeiras (UNED Cajazeiras), parte 
-        da Escola Técnica Federal da Paraíba.
+        O Instituto Federal de Educação, Ciência e Tecnologia da Paraíba, Campus Cajazeiras, é fruto das aspirações da sociedade dos sertões do Rio 
+        Piranhas por conhecimento humano, profissionalizante, científico e tecnológico. A realização desse desejo iniciou-se por meio do Projeto de
+        Lei n° 3305-A de 1984, implementado pelo então deputado federal Edme Tavares. Em 04 de dezembro de 1994, as portas se abrem: aconteceu a
+        inauguração da Unidade de Ensino Descentralizada, sediada na cidade de Cajazeiras (UNED Cajazeiras), parte da Escola Técnica Federal da Paraíba.
       </Quote>
 
       <Paragraph>
-        O Projeto de Lei nº 3305-A, de 1984, apresentado pelo então deputado federal Edme Tavares na Câmara Federal, dispõe sobre a criação da Escola Técnica Federal em Cajazeiras. 
-        A Figura 3 apresenta um recorte de jornal com o referido projeto de lei.
+        O Projeto de Lei nº 3305-A, de 1984, apresentado pelo então deputado federal Edme Tavares na Câmara Federal, dispõe sobre a criação da Escola
+        Técnica Federal em Cajazeiras. A Figura 3 apresenta um recorte de jornal com o referido projeto de lei.
       </Paragraph>
 
-      {/* Terceira imagem */}
-      <div style={{ margin: "40px auto", width: "500px" }}>
+      <div className={styles.imageCenter}>
         <ImageDescription
           pictureURL={Figura3}
           width="100%"
@@ -110,7 +97,7 @@ export default function CampusHistory() {
       </Paragraph>
 
       {/* Quarta imagem */}
-      <div style={{ margin: "40px auto", width: "500px" }}>
+      <div className={styles.imageCenter}>
         <ImageDescription
           pictureURL={Figura4}
           width="100%"
@@ -124,7 +111,7 @@ export default function CampusHistory() {
       </Paragraph>
 
       {/* Quinta imagem */}
-      <div style={{ margin: "40px auto", width: "500px" }}>
+      <div className={styles.imageCenter}>
         <ImageDescription
           pictureURL={Figura5}
           width="100%"
@@ -150,7 +137,7 @@ export default function CampusHistory() {
       </Quote>
 
       {/* Sexta imagem */}
-      <div style={{ margin: "40px auto", width: "500px" }}>
+      <div className={styles.imageCenter}>
         <ImageDescription
           pictureURL={Figura6}
           width="100%"
@@ -164,7 +151,7 @@ export default function CampusHistory() {
       </Paragraph>
 
       {/* Sétima imagem */}
-      <div style={{ margin: "40px auto", width: "500px" }}>
+      <div className={styles.imageCenter}>
         <ImageDescription
           pictureURL={Figura7}
           width="100%"
@@ -183,7 +170,7 @@ export default function CampusHistory() {
       </Paragraph>   
 
       {/* Oitava imagem */}
-      <div style={{ margin: "40px auto", width: "500px" }}>
+      <div className={styles.imageCenter}>
         <ImageDescription
           pictureURL={Figura8}
           width="100%"
@@ -192,7 +179,7 @@ export default function CampusHistory() {
       </div>
 
       {/* Nona imagem */}
-      <div style={{ margin: "40px auto", width: "300px" }}>
+      <div className={styles.imageCenter} style={{ maxWidth:'300px'}}>
         <ImageDescription
           pictureURL={Figura9}
           width="100%"
@@ -205,7 +192,7 @@ export default function CampusHistory() {
       </Paragraph>
 
       {/* Décima imagem */}
-      <div style={{ margin: "40px auto", width: "500px" }}>
+      <div className={styles.imageCenter}>
         <ImageDescription
           pictureURL={Figura10}
           width="100%"
@@ -228,7 +215,7 @@ export default function CampusHistory() {
       </Paragraph>
 
       {/* Décima primeira imagem */}
-      <div style={{ margin: "40px auto", width: "500px" }}>
+      <div className={styles.imageCenter}>
         <ImageDescription
           pictureURL={Figura11}
           width="100%"
@@ -262,7 +249,7 @@ export default function CampusHistory() {
         no cargo até 19 de fevereiro de 2001.
       </Paragraph>
 
-      <h3 style={{ marginTop: '40px' }}>Centro Federal De Educação Tecnológica Da Paraíba (CEFET/PB)</h3>
+      <h3>Centro Federal De Educação Tecnológica Da Paraíba (CEFET/PB)</h3>
       <Paragraph>
         O ano era 1994, quando os CEFETs foram concebidos sob a Lei nº 8.948/94, como unidades-modelo da Rede Federal de Ensino 
         Profissional, Científico e Tecnológico (RFEPCT), absorvendo, assim, as atividades das Escolas Técnicas Federais e das 
@@ -311,7 +298,7 @@ export default function CampusHistory() {
       </Paragraph>
 
       {/* Décima segunda imagem */}
-      <div style={{ margin: "40px auto", width: "100%", maxWidth: "500px" }}>
+      <div className={styles.imageCenter}>
         <ImageDescription
           pictureURL={Figura12}
           width="100%"
@@ -425,7 +412,7 @@ export default function CampusHistory() {
         No ano seguinte, deu-se nova consulta para a escolha do diretor, sendo eleito o professor Roscellino Bezerra de Mello Júnior, com nomeação publicada na Portaria nº 335, de 11 de julho de 2007.
       </Paragraph>
 
-      <h3 style={{ marginTop: '40px' }}>Instituto Federal Da Paraíba (IFPB)</h3>
+      <h3>Instituto Federal Da Paraíba (IFPB)</h3>
 
       <Paragraph>
         No ano de 2008, por meio da Lei nº 11.892/2008, o então presidente Luiz Inácio Lula da Silva criou os Institutos Federais com o objetivo de reorganizar o sistema federal de educação técnica 
