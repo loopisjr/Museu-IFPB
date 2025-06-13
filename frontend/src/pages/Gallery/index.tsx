@@ -9,19 +9,19 @@ type ImageData = {
 export default function Gallery() {
   const images: ImageData[][] = [
     [
-      {src: "/gallery/IMG_2952.jpg", alt: "Imagem 1"},
-      {src: "/gallery/IMG_2953.jpg", alt: "Imagem 2"},
-      {src: "/gallery/IMG_2956.jpg", alt: "Imagem 3"},
+      {src: "images/gallery/IMG_2952.jpg", alt: "Imagem 1"},
+      {src: "images/gallery/IMG_2953.jpg", alt: "Imagem 2"},
+      {src: "images/gallery/IMG_2956.jpg", alt: "Imagem 3"},
     ],
     [
-      {src: "/gallery/IMG_2959.jpg", alt: "Imagem 4"},
-      {src: "/gallery/IMG_2960.jpg", alt: "Imagem 5"},
-      {src: "/gallery/IMG_2964.jpg", alt: "Imagem 6"},
+      {src: "images/gallery/IMG_2959.jpg", alt: "Imagem 4"},
+      {src: "images/gallery/IMG_2960.jpg", alt: "Imagem 5"},
+      {src: "images/gallery/IMG_2964.jpg", alt: "Imagem 6"},
     ],
     [
-      {src: "/gallery/IMG_2982.jpg", alt: "Imagem 7"},
-      {src: "/gallery/IMG_2994.jpg", alt: "Imagem 8"},
-      {src: "/gallery/IMG_3005.jpg", alt: "Imagem 9"},
+      {src: "images/gallery/IMG_2982.jpg", alt: "Imagem 7"},
+      {src: "images/gallery/IMG_2994.jpg", alt: "Imagem 8"},
+      {src: "images/gallery/IMG_3005.jpg", alt: "Imagem 9"},
     ]
   ]
   return (

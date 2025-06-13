@@ -2,18 +2,18 @@ import Title from "../../components/Title"
 import ImageDescription from "../../components/ImageDescription"
 import Paragraph from "../../components/Paragraph/Paragraph";
 import Quote from "../../components/Quote/Quote";
-import Figura1 from '../../assets/images/CampusHistory/Figura1.png';
-import Figura2 from '../../assets/images/CampusHistory/Figura2.png';
-import Figura3 from '../../assets/images/CampusHistory/Figura3.png';
-import Figura4 from '../../assets/images/CampusHistory/Figura4.png';
-import Figura5 from '../../assets/images/CampusHistory/Figura5.png';
-import Figura6 from '../../assets/images/CampusHistory/Figura6.png';
-import Figura7 from '../../assets/images/CampusHistory/Figura7.png';
-import Figura8 from '../../assets/images/CampusHistory/Figura8.png';
-import Figura9 from '../../assets/images/CampusHistory/Figura9.png';
-import Figura10 from '../../assets/images/CampusHistory/Figura10.png';
-import Figura11 from '../../assets/images/CampusHistory/Figura11.png';
-import Figura12 from '../../assets/images/CampusHistory/Figura12.png';
+const Figura1 = '/images/CampusHistory/Figura1.png';
+const Figura2 = '/images/CampusHistory/Figura2.png';
+const Figura3 = '/images/CampusHistory/Figura3.png';
+const Figura4 = '/images/CampusHistory/Figura4.png';
+const Figura5 = '/images/CampusHistory/Figura5.png';
+const Figura6 = '/images/CampusHistory/Figura6.png';
+const Figura7 = '/images/CampusHistory/Figura7.png';
+const Figura8 = '/images/CampusHistory/Figura8.png';
+const Figura9 = '/images/CampusHistory/Figura9.png';
+const Figura10 = '/images/CampusHistory/Figura10.png';
+const Figura11 = '/images/CampusHistory/Figura11.png';
+const Figura12 = '/images/CampusHistory/Figura12.png';
 
 import styles from "./CampusHistory.module.css";
 export default function CampusHistory() {

@@ -11,7 +11,7 @@ export default function DirectorsGallery() {
       <Timeline items={[{
         element: <DirectorsCard 
           title="Designação do primeiro diretor da UNEDCZ"
-          pictureURL="./src/assets/images/directors/image1.jpeg"
+          pictureURL="/images/directors/image1.jpeg"
           pictureAlt="Figura 1 - designação do primeiro diretor da UNEDCZ em 1994."
           content={["No dia 15 de julho de 1994, o então diretor-geral da Escola Técnica Federal da Paraíba (ETFPB), Bráulio Pereira Lins, mediante a Portaria nº 142, de 15 de julho de 1994, designou o professor Antônio Carlos Gomes Varela como diretor, para que este conduzisse a instalação e a preparação para o funcionamento da nova unidade de ensino.", "O diretor pioneiro da instituição cumpriu sua missão: adquiriu os equipamentos para os laboratórios, os mobiliários e a mão de obra servidora.", "Os primeiros servidores ingressaram na Unidade de Ensino Descentralizada de Cajazeiras (UNED-CZ) por meio de concursos públicos realizados em agosto de 1994.", "Seu mandato ocorreu no período de 15/07/1994 a 08/06/1995."]}
         />,
@@ -19,7 +19,7 @@ export default function DirectorsGallery() {
       },{
         element: <DirectorsCard 
           title="Posse do segundo diretor da UNEDCZ"
-          pictureURL="./src/assets/images/directors/image2.jpeg"
+          pictureURL="/images/directors/image2.jpeg"
           pictureAlt="Figura 2 - posse do segundo diretor da UNEDCZ em 1995."
           content={["A Portaria nº 265, de 9 de junho de 1995, promoveu a nomeação do novo diretor da instituição, o professor João Batista de Oliveira Silva, nomeado pelo então diretor-geral da ETFPB, professor Almiro de Sá Ferreira.", "O professor João Batista de Oliveira Silva, que já ocupava o cargo desde 1995, permaneceu no CEFET até o ano de 2001.", "Até esse período, os diretores das unidades eram indicados pelos diretores-gerais."]}
         />,
@@ -27,7 +27,7 @@ export default function DirectorsGallery() {
       },{
         element: <DirectorsCard 
           title="Posse do diretor interino do CEFETCZ"
-          pictureURL="./src/assets/images/directors/image3.jpeg"
+          pictureURL="/images/directors/image3.jpeg"
           pictureAlt="Figura 3 - posse do diretor interino do CEFETCZ em 2001."
           content={["No entanto, diante da pressão de servidores e do sindicato, a Portaria nº 45, de 19 de fevereiro de 2001, designou o professor Dimas Andriola Pereira como diretor interino, com a finalidade de promover a eleição direta."]}
         />,
@@ -35,7 +35,7 @@ export default function DirectorsGallery() {
       },{
         element: <DirectorsCard 
           title="Posse do novo diretor da CEFETCZ"
-          pictureURL="./src/assets/images/directors/image4.jpeg"
+          pictureURL="/images/directors/image4.jpeg"
           pictureAlt="Figura 4 - posse do novo diretor da CEFETCZ em 2001."
           content={["No dia 6 de junho de 2001, ocorreu a primeira eleição direta para a direção-geral da instituição.","Concorreram ao cargo de diretor os professores Chaquibe Costa de Farias, Francisco Thadeu Carvalho de Matos e Roscellino Bezerra de Mello Júnior.", "Este saiu vencedor com 44,93% dos votos, sendo nomeado pela Portaria nº 177, de 27 de junho de 2001, e permaneceu no cargo por apenas um ano, pois se afastou em 1º de junho de 2002."]}
         />,
@@ -43,7 +43,7 @@ export default function DirectorsGallery() {
       },{
         element: <DirectorsCard 
           title="Posse da diretora interina da CEFETCZ"
-          pictureURL="./src/assets/images/directors/image5.jpeg"
+          pictureURL="/images/directors/image5.jpeg"
           pictureAlt="Figura 5 - posse da diretora interina da CEFETCZ em 2002."
           content={["Com o afastamento do professor Roscellino, assumiu interinamente a direção do CEFET-CZ a servidora Maria de Fátima Vieira Cartaxo, nomeada pela Portaria nº 137, de 1º de julho de 2002."]}
         />,
@@ -51,7 +51,7 @@ export default function DirectorsGallery() {
       },{
         element: <DirectorsCard 
           title="Posse da diretora eleita da CEFETCZ"
-          pictureURL="./src/assets/images/directors/image6.jpeg"
+          pictureURL="/images/directors/image6.jpeg"
           pictureAlt="Figura 6 - posse da diretora eleita da CEFETCZ em 2003."
           content={["O novo pleito ocorreu em 18 de junho de 2003, quando a então diretora, Maria de Fátima Vieira Cartaxo, concorreu com o professor Francisco Emanuel Ferreira de Almeida.", "Fátima foi eleita com a maioria dos votos, para um mandato de quatro anos."]}
         />,
@@ -89,7 +89,7 @@ export default function DirectorsGallery() {
       },{
         element: <DirectorsCard 
           title="Abinadabe eleito como diretor-geral"
-          pictureURL="./src/assets/images/directors/image7.jpeg"
+          pictureURL="/images/directors/image7.jpeg"
           pictureAlt="Figura 7 - Posse do diretor eleito da IFPBCZ em 2022"
           content={["No pleito de 2022, Lucrécia apoiou o professor Abinadabe Silva Andrade, que concorreu com o também professor Francisco Daladier Marques Junior.", "Abinadabe foi eleito e está exercendo seu primeiro mandato desde 21 de outubro de 2022."]}
         />,
@@ -97,7 +97,7 @@ export default function DirectorsGallery() {
       },{
         element: <DirectorsCard 
           title="Inauguração da galeria dos ex-diretores"
-          pictureURL="./src/assets/images/directors/image8.jpeg"
+          pictureURL="/images/directors/image8.jpeg"
           pictureAlt="Figura 8 - Galeria dos ex-diretores"
           content={["Em 4 de dezembro de 2024, durante as comemorações dos 30 anos do Instituto Federal da Paraíba – Campus Cajazeiras, a Direção-Geral inaugurou, no 1º andar do bloco administrativo, uma galeria dos ex-diretores da instituição.", "A galeria apresenta as fotografias dos ex-diretores e os respectivos períodos de suas gestões."]}
         />,

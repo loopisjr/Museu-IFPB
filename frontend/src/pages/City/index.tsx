@@ -20,7 +20,7 @@ export default function City() {
   return (
     <div>
         <BannerCajazeiras title="Cajazeiras" subtitle="A cidade que ensinou a Paraíba a ler"
-        description={textoBanner} pictureURL="./src/assets/images/banner_cajazeiras.png"
+        description={textoBanner} pictureURL="/images/banner_cajazeiras.png"
         horizontal_padding="200px"/>
 
         <div className={style.conteudo}>
@@ -44,7 +44,7 @@ export default function City() {
             </Paragraph>
 
             <div className={style.centralizar}>
-                <ImageDescription pictureURL="./src/assets/images/city1.png" description="Casa grande da fazenda Cajazeiras" width="auto"/>
+                <ImageDescription pictureURL="/images/city1.png" description="Casa grande da fazenda Cajazeiras" width="auto"/>
             </div>
             
 
@@ -71,7 +71,7 @@ export default function City() {
             </Paragraph>
 
             <div className={style.centralizar}>
-                <ImageDescription pictureURL="./src/assets/images/city2.png" description="Igreja matriz de Nossa Senhora de Fátima" width="auto"/>
+                <ImageDescription pictureURL="/images/city2.png" description="Igreja matriz de Nossa Senhora de Fátima" width="auto"/>
             </div>
 
             <Paragraph>
@@ -82,7 +82,7 @@ export default function City() {
             </Paragraph>
 
             <div className={style.centralizar}>
-                <ImageDescription pictureURL="./src/assets/images/city3.png" description="Catedral Nossa Senhora da Piedade - Cajazeiras - PB" width="auto"/>
+                <ImageDescription pictureURL="/images/city3.png" description="Catedral Nossa Senhora da Piedade - Cajazeiras - PB" width="auto"/>
             </div>
 
             <Paragraph>
@@ -97,7 +97,7 @@ export default function City() {
             </Paragraph>
 
             <div className={style.centralizar}>
-                <ImageDescription pictureURL="./src/assets/images/city4.png" description="Padre Inácio de Souza Rolim" width="400px"/>
+                <ImageDescription pictureURL="/images/city4.png" description="Padre Inácio de Souza Rolim" width="400px"/>
             </div>
 
             <Paragraph>
@@ -116,7 +116,7 @@ export default function City() {
             </Paragraph>
 
             <div className={style.centralizar}>
-                <ImageDescription pictureURL="./src/assets/images/city5.png" description="Colégio Nossa Senhora de Lourdes" width="400px"/>
+                <ImageDescription pictureURL="/images/city5.png" description="Colégio Nossa Senhora de Lourdes" width="400px"/>
             </div>
 
             <Paragraph>
