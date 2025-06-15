@@ -1,9 +1,11 @@
-.bannerWrapper {
+section {
     background-color: var(--secondary-background);
-    padding: var(--vertical-padding) var(--horizontal-padding);
 }
 
 .banner {
+    max-width: calc(1440px - (2 * var(--padding-size)));
+    margin: 0 auto; /* centraliza */
+
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -64,7 +66,7 @@
 }
 
 @media (max-width: 600px) {
-    .bannerWrapper {
+    section {
         padding: 8% 8%;
     }    
 }
