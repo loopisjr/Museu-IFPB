@@ -7,11 +7,12 @@ type BannerCajazeirasProps = {
     pictureURL: string,
     pictureWidth?: string,    
     vertical_padding?: string,
-    horizontal_padding?: string
+    horizontal_padding?: string,
+    altText?: string,
 }
 
 function BannerCajazeiras({title, subtitle, description, pictureURL, pictureWidth="500px", 
-        vertical_padding="50px", horizontal_padding="100px"}: BannerCajazeirasProps){
+        vertical_padding="50px", horizontal_padding="100px", altText }: BannerCajazeirasProps){
 
     return (
         <div className={style.bannerWrapper} 
@@ -26,7 +27,7 @@ function BannerCajazeiras({title, subtitle, description, pictureURL, pictureWidt
                     </div>
                 </div>
                 
-                <img src={pictureURL} className={style.picture} 
+                <img src={pictureURL} className={style.picture} alt={altText}
                     style={{ width: pictureWidth }}/>
             </div>
         </div>
