@@ -96,7 +96,7 @@ export default function City() {
             </Paragraph>
 
             <div className={style.centralizar}>
-                <ImageDescription pictureURL="/images/city4.png" description="Padre Inácio de Souza Rolim" width="400px"/>
+                <ImageDescription pictureURL="/images/city4.png" description="Padre Inácio de Souza Rolim" width="auto"/>
             </div>
 
             <Paragraph>
@@ -115,7 +115,7 @@ export default function City() {
             </Paragraph>
 
             <div className={style.centralizar}>
-                <ImageDescription pictureURL="/images/city5.png" description="Colégio Nossa Senhora de Lourdes" width="400px"/>
+                <ImageDescription pictureURL="/images/city5.png" description="Colégio Nossa Senhora de Lourdes" width="auto"/>
             </div>
 
             <Paragraph>
