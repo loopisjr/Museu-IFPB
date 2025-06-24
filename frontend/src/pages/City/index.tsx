@@ -43,7 +43,7 @@ export default function City() {
             </Paragraph>
 
             <div className={style.centralizar}>
-                <ImageDescription pictureURL="/images/city1.png" description="Casa grande da fazenda Cajazeiras" width="auto"/>
+                <ImageDescription pictureURL="/images/city1.png" description="Casa grande da fazenda Cajazeiras" width="auto" source="Supermercado Cajazeiras, 2025." numPicture={1}/>
             </div>
             
 
@@ -70,7 +70,7 @@ export default function City() {
             </Paragraph>
 
             <div className={style.centralizar}>
-                <ImageDescription pictureURL="/images/city2.png" description="Igreja matriz de Nossa Senhora de Fátima" width="auto"/>
+                <ImageDescription pictureURL="/images/city2.png" description="Igreja matriz de Nossa Senhora de Fátima" width="auto" source="Arquivo pessoal do autor, 2025." numPicture={2}/>
             </div>
 
             <Paragraph>
@@ -81,7 +81,7 @@ export default function City() {
             </Paragraph>
 
             <div className={style.centralizar}>
-                <ImageDescription pictureURL="/images/city3.png" description="Catedral Nossa Senhora da Piedade - Cajazeiras - PB" width="auto"/>
+                <ImageDescription pictureURL="/images/city3.png" description="Catedral Nossa Senhora da Piedade - Cajazeiras - PB" width="auto" source="Kyioshi Abreu, 2025." numPicture={3}/>
             </div>
 
             <Paragraph>
@@ -96,7 +96,7 @@ export default function City() {
             </Paragraph>
 
             <div className={style.centralizar}>
-                <ImageDescription pictureURL="/images/city4.png" description="Padre Inácio de Souza Rolim" width="auto"/>
+                <ImageDescription pictureURL="/images/city4.png" description="Padre Inácio de Souza Rolim" width="auto" source="Kyioshi Abreu, 2025." numPicture={3}/>
             </div>
 
             <Paragraph>
@@ -115,7 +115,7 @@ export default function City() {
             </Paragraph>
 
             <div className={style.centralizar}>
-                <ImageDescription pictureURL="/images/city5.png" description="Colégio Nossa Senhora de Lourdes" width="auto"/>
+                <ImageDescription pictureURL="/images/city5.png" description="Colégio Nossa Senhora de Lourdes" width="auto" source="Arquivo do autor, 2025." numPicture={5}/>
             </div>
 
             <Paragraph>

@@ -1,6 +1,9 @@
 .imageDescription {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
     width: var(--image-width);
+    align-items: center;
+    justify-content: center;
 }
 
 .image {
@@ -9,15 +12,22 @@
     width: auto;
 }
 
+.bold{
+    white-space: nowrap
+}
+
 .description {
-    width: 100%;
-    margin: 0 0;
+    width: auto;
+    margin: 0 0 4px;
     display: flex;
     justify-content: center;
-    font-size: small;
+    text-align: center;
+    font-size: 0.845rem;
 }
 
 .source {
-    text-align: center;
-    font-size: small;
+    text-align: left;
+    font-size: 0.75rem;
+    width: 100%;
+    margin: 0 0;
 }
