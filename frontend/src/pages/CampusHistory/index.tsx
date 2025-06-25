@@ -36,7 +36,9 @@ export default function CampusHistory() {
         <ImageDescription
           pictureURL={Figura1}
           width="100%"
-          description="Figura 1: Instalação da Escola de Aprendizes e Artífices da Paraíba em 1910."
+          description="Instalação da Escola de Aprendizes e Artífices da Paraíba em 1910."
+          source="Fotografia da instalação da escola em 1990, 2025."
+          numPicture={1}
         />
       </div>
 
@@ -63,7 +65,9 @@ export default function CampusHistory() {
         <ImageDescription
           pictureURL={Figura2}
           width="100%"
-          description="Figura 2: Ofício da Prefeitura Municipal de Cajazeiras."
+          description="Ofício da Prefeitura Municipal de Cajazeiras."
+          source="Arquivo institucional do IFPB Campus Cajazeiras."
+          numPicture={2}
         />
       </div>
 
@@ -85,7 +89,9 @@ export default function CampusHistory() {
         <ImageDescription
           pictureURL={Figura3}
           width="100%"
-          description="Figura 3: Projeto de lei da implantação da UNED Cajazeiras."
+          description="Projeto de lei da implantação da UNED Cajazeiras."
+          source="Arquivo institucional do IFPB Campus Cajazeiras."
+          numPicture={3}
         />
       </div>
 
@@ -101,7 +107,9 @@ export default function CampusHistory() {
         <ImageDescription
           pictureURL={Figura4}
           width="100%"
-          description="Figura 4: Proposta de implantação da UNED Cajazeiras."
+          description="Proposta de implantação da UNED Cajazeiras."
+          source="Arquivo institucional do IFPB Campus Cajazeiras."
+          numPicture={4}
         />
       </div>
       
@@ -115,7 +123,9 @@ export default function CampusHistory() {
         <ImageDescription
           pictureURL={Figura5}
           width="100%"
-          description="Figura 5: Lançamento da pedra fundamental da UNED Cajazeiras em 1989."
+          description="Lançamento da pedra fundamental da UNED Cajazeiras em 1989."
+          source="Arquivo institucional do IFPB Campus Cajazeiras."
+          numPicture={5}
         />
       </div>
 
@@ -141,7 +151,9 @@ export default function CampusHistory() {
         <ImageDescription
           pictureURL={Figura6}
           width="100%"
-          description="Figura 6: Portaria nº 982, de 28 de junho de 1994."
+          description="Portaria nº 982, de 28 de junho de 1994."
+          source="Arquivo institucional do IFPB Campus Cajazeiras."
+          numPicture={6}
         />
       </div>
 
@@ -155,7 +167,9 @@ export default function CampusHistory() {
         <ImageDescription
           pictureURL={Figura7}
           width="100%"
-          description="Figura 7: Designação do primeiro diretor da UNED."
+          description="Designação do primeiro diretor da UNED."
+          source="Arquivo institucional do IFPB Campus Cajazeiras."
+          numPicture={7}
         />
       </div>
 
@@ -174,7 +188,9 @@ export default function CampusHistory() {
         <ImageDescription
           pictureURL={Figura8}
           width="100%"
-          description="Figura 8: 1º concurso público para o magistério."
+          description="1º concurso público para o magistério."
+          source="Arquivo institucional do IFPB Campus Cajazeiras."
+          numPicture={8}
         />
       </div>
 
@@ -183,7 +199,9 @@ export default function CampusHistory() {
         <ImageDescription
           pictureURL={Figura9}
           width="100%"
-          description="Figura 9: 1º concurso público para Técnico administrativo."
+          description="1º concurso público para Técnico administrativo."
+          source="Arquivo institucional do IFPB Campus Cajazeiras."
+          numPicture={9}
         />
       </div>
 
@@ -196,7 +214,9 @@ export default function CampusHistory() {
         <ImageDescription
           pictureURL={Figura10}
           width="100%"
-          description="Figura 10: Inauguração UNED Cajazeiras."
+          description="Inauguração UNED Cajazeiras."
+          source="Arquivo institucional do IFPB Campus Cajazeiras."
+          numPicture={10}
         />
       </div>
 
@@ -219,7 +239,9 @@ export default function CampusHistory() {
         <ImageDescription
           pictureURL={Figura11}
           width="100%"
-          description="Figura 11: Convite do Deputado Edme Tavares para a inauguração da UNED Cajazeiras."
+          description="Convite do Deputado Edme Tavares para a inauguração da UNED Cajazeiras."
+          source="Arquivo institucional do IFPB Campus Cajazeiras."
+          numPicture={11}
         />
       </div>
 
@@ -302,7 +324,9 @@ export default function CampusHistory() {
         <ImageDescription
           pictureURL={Figura12}
           width="100%"
-          description="Figura 12: Solenidade de mudança da UNED para CEFET."
+          description="Solenidade de mudança da UNED para CEFET."
+          source="Arquivo institucional do IFPB Campus Cajazeiras."
+          numPicture={12}
         />
       </div>
 

@@ -9,14 +9,22 @@ type BannerCajazeirasProps = {
     vertical_padding?: string,
     horizontal_padding?: string,
     altText?: string,
+    className?: string
 }
 
-function BannerCajazeiras({title, subtitle, description, pictureURL, pictureWidth="500px", 
-        vertical_padding="50px", horizontal_padding="100px", altText }: BannerCajazeirasProps){
+
+function BannerCajazeiras({
+    title, 
+    subtitle, 
+    description, 
+    pictureURL, 
+    pictureWidth="500px",  
+    altText,
+    className}: BannerCajazeirasProps){
+
 
     return (
-        <div className={style.bannerWrapper} 
-            style={{"--horizontal-padding": horizontal_padding, "--vertical-padding": vertical_padding} as React.CSSProperties}>
+        <section className={className}>
             <div className={style.banner}>
 
                 <div className={style.textBlock}>
@@ -30,7 +38,7 @@ function BannerCajazeiras({title, subtitle, description, pictureURL, pictureWidt
                 <img src={pictureURL} className={style.picture} alt={altText}
                     style={{ width: pictureWidth }}/>
             </div>
-        </div>
+        </section>
     );
 }
 

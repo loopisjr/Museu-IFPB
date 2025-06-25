@@ -1,3 +1,47 @@
+:root{
+  --padding-size: 16px;
+}
+
+.container {
+  margin: 0 auto;
+  padding: var(--padding-size);
+  box-sizing: border-box;
+}
+
+main{
+  max-width: 1440px;
+}
+
+@media (min-width: 601px) {
+  :root{
+      --padding-size: 32px;
+  }
+
+  .container {
+    padding: var(--padding-size);
+  }
+}
+
+@media (min-width: 1001px) {
+  :root{
+    --padding-size: 70px;
+  }
+
+  .container {
+    padding: var(--padding-size);
+  }
+}
+
+@media (min-width: 1201px) {
+  :root{
+      --padding-size: 120px;
+  }
+
+  .container {
+    padding: 45px var(--padding-size) 45px var(--padding-size);
+  }
+}
+
 .conteudo{
     margin: 0 200px 80px;
 }
