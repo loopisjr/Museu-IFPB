@@ -7,9 +7,10 @@ type BookCardProps = {
   author: string;
   description: string;
   inverted?: boolean;
+  link?: string;
 };
 
-export function BookCard({ image, tags, title, author, description, inverted = false, }: BookCardProps) {
+export function BookCard({ image, tags, title,  author, description, inverted = false, link}: BookCardProps) {
   return (
     <div className={`${style.container} ${inverted ? style.inverted : ""}`}>
       <div className={style.imageWrapper}>
@@ -26,7 +27,20 @@ export function BookCard({ image, tags, title, author, description, inverted = f
           ))}
         </div>
 
-        <h1 className={style.title}>{title}</h1>
+        <h1 className={style.title}>
+          {link ? (
+            <a
+              href={link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={style.linkTitle}
+            >
+              {title}
+            </a>
+          ) : (
+            title
+          )}
+        </h1>
 
         <img src={image} alt={title} className={style.imageMobile} />
 
