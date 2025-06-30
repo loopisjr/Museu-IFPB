@@ -1,7 +1,6 @@
 ul.referencesList {
     list-style: none;
     padding: 0;
-    margin-left: 60px;
 }
 
 
@@ -11,6 +10,9 @@ ul.referencesList li {
     margin-bottom: 15px;
 }
 
+ul.referencesList li strong {
+  word-break: break-word;
+}
 
 ul.referencesList li::before {
     content: "";
