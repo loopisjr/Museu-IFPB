@@ -6,7 +6,7 @@ import linkedin from "../../assets/icons/linkedin-color.png"
 export default function Author() {
   return (
     <div className={`${style.container} container`}>
-      <img src="https://images.pexels.com/photos/2513993/pexels-photo-2513993.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Autor" />
+      <img src="/images/author/cliente.jpg" alt="Autor" />
       <div className={style.content}>
         <div className={style.header}>
           <h1 className={style.authorName}>José Sérgio Aristides Lira</h1>
