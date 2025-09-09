@@ -7,7 +7,8 @@ export default function Works() {
     <div className={style.container}>
       <div className={style.headerText}>
         <center><Title content="Obras" /></center>
-        <p>Livros publicados a respeito da instituição</p>
+        <p>Veja todos os livros publicados a respeito da instituição <a style={{textDecoration: "none"}} target="_blank" href="https://editora.ifpb.edu.br/ifpb/catalog/series/memorias">aqui</a>.
+          </p>
       </div>
 
       <BookCard
