@@ -20,6 +20,7 @@ export default function Home() {
       <BannerCajazeiras
         title={'Campus Cajazeiras'}
         subtitle={''}
+        className={style.container}
         description={'O Campus Cajazeiras, ao longo de sua história, tem cumprido sua missão de oferecer formação profissional de qualidade, mas também de ser espaço de formação para a vida, promovendo o desenvolvimento de competências humanas, cidadãs e sociais. Contribui-se, assim, não só para o registro histórico, mas também para o fortalecimento da identidade institucional e para a valorização das experiências que aqui se entrelaçam, formando pessoas não apenas para o mundo do trabalho, mas para a vida em sociedade.'}
         pictureURL={'/images/GOPR0042.JPG'}
         altText={'Fachada do Instituto Federal da Paraíba – Campus Cajazeiras, com prédio de tijolos à vista e concreto, entrada central envidraçada, ladeada por jardins bem cuidados com flores vermelhas e palmeiras, sob um céu parcialmente nublado.'}

@@ -19,8 +19,14 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding-inline: 8rem;
+  padding-inline: 2rem;
   margin: auto;
+}
+
+@media (min-width: 605px) {
+  .container {
+    padding-inline: 8rem;
+  }
 }
 
 .background {
@@ -63,7 +69,13 @@
 }
 
 .emptySpace {
-  width: 50%;
+  width: 0%;
+}
+
+@media (min-width: 605px) {
+  .emptySpace {
+    width: 50%;
+  }
 }
 
 .title {

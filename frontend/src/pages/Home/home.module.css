@@ -1,3 +1,13 @@
+:root{
+  --padding-size: 16px;
+}
+
+.container {
+  margin: 0 auto;
+  padding: var(--padding-size);
+  box-sizing: border-box;
+}
+
 .textArea {
   max-width: 80ch;
   margin-inline: auto;
