@@ -18,13 +18,13 @@ export default function Author() {
 Trabalhei por sete anos na Companhia de Águas e Esgotos da Paraíba (CAGEPA) e, desde 2016, sou servidor técnico-administrativo em Educação no Instituto Federal da Paraíba, tendo atuado nos campi Catolé do Rocha e Cajazeiras.
           </p>
         </div>
-        <div className={style.boxIcons}>
+        {/* <div className={style.boxIcons}>
 
           <img className={style.icon} src={facebook} alt="Icon facebook" />
           <img className={style.icon} src={instagram} alt="Icon instagram" />
           <img className={style.icon} src={linkedin} alt="Icon linkedin " />
 
-        </div>
+        </div> */}
       </div>
     </div>
   )

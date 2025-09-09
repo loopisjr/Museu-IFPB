@@ -12,9 +12,15 @@ export default function Footer() {
         <Logo />
         <p className={style.loopis}>Desenvolvido pela empresa Loopis Jr</p>
         <div className={style.redessociais}>
-          <img src={instagram} alt="Icon do instagram" />
-          <img src={facebook} alt="Icon do facebook" />
-          <img src={linkedin} alt="Icon do linkedin" />
+          <a href="https://www.instagram.com/loopisjr" target='_blank'>
+            <img src={instagram} alt="Icon do instagram" />
+          </a>
+          <a href="https://www.linkedin.com/company/loopisjr/posts" target='_blank'>
+            <img src={facebook} alt="Icon do facebook" />
+          </a>
+          <a href="https://www.linkedin.com/company/loopisjr/posts" target='_blank'>
+            <img src={linkedin} alt="Icon do linkedin" />
+          </a>
         </div>
       </div>
     </footer>
