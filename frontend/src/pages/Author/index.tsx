@@ -1,7 +1,7 @@
 import style from "./author.module.css"
-import facebook from "../../assets/icons/facebook-color.png"
+/* import facebook from "../../assets/icons/facebook-color.png"
 import instagram from "../../assets/icons/instagram-color.png"
-import linkedin from "../../assets/icons/linkedin-color.png"
+import linkedin from "../../assets/icons/linkedin-color.png" */
 
 export default function Author() {
   return (
