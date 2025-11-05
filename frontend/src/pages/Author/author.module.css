@@ -1,0 +1,112 @@
+.container,
+.content,
+.boxIcons {
+  display: flex;
+  gap: 16px;
+}
+
+.container,
+.content {
+  flex-direction: column;
+}
+
+.container {
+  width: 100%;
+  max-width: 1100px;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+
+@media (min-width: 600px) {
+  .container {
+    padding: 32px;
+  }
+}
+@media (min-width: 1000px) {
+  .container {
+    padding: 70px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    padding: 120px;
+  }
+}
+
+.container>img,
+.icon {
+  aspect-ratio: 1/1;
+  object-fit: cover
+}
+
+.container>img {
+  width: 100%;
+  border-radius: 100%;
+  max-width: 466px;
+}
+
+.header {
+  padding-bottom: 16px;
+  border-bottom: solid 2px var(--secondary-color);
+}
+
+.authorName,
+.authorProfession {
+  text-align: center;
+}
+
+.authorName {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.authorProfession,
+.authorBody {
+  font-size: 0.9rem;
+}
+
+.authorProfession {
+  font-weight: 600;
+  opacity: 0.85;
+}
+
+.authorBody {
+  font-weight: 400;
+}
+
+.boxIcons {
+  justify-content: flex-end;
+}
+
+.icon {
+  max-width: 32px;
+  max-height: 32px;
+}
+
+@media (min-width: 850px) {
+  .container {
+    flex-direction: row;
+    gap: 5%;
+    padding: 32px;
+  }
+
+  .container>img {
+    width: auto;
+  }
+
+  .container>div {
+    max-width: 530px;
+    min-width: 300px;
+  }
+
+  .authorName,
+  .authorProfession {
+    text-align: left;
+  }
+
+  .authorName {
+    font-size: 2.5rem;
+    line-height: 1;
+  }
+}

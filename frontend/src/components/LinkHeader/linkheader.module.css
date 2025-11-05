@@ -1,0 +1,40 @@
+.li {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .li {
+    padding-bottom: 14px;
+  }
+}
+
+.li:last-of-type {
+  border: none;
+  padding-bottom: 0px;
+}
+
+
+.item {
+  color: var(--tertiary-color);
+  text-decoration: none;
+}
+
+.item::after {
+  content: "";
+  display: block;
+  width: 0%;
+  height: 2px;
+  background-color: transparent;
+  transition: 0.3s 0s;
+}
+
+.item:hover::after {
+  background-color: var(--secondary-color);
+  width: 100%;
+}
+
+
+.itemActived::after {
+  background-color: var(--secondary-color);
+  width: 100%;
+}

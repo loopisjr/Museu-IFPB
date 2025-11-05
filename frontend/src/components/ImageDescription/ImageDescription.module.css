@@ -1,0 +1,33 @@
+.imageDescription {
+    display: flex;
+    flex-direction: column;
+    width: var(--image-width);
+    align-items: center;
+    justify-content: center;
+}
+
+.image {
+    max-width: 100%;
+    height: auto;
+    width: auto;
+}
+
+.bold{
+    white-space: nowrap
+}
+
+.description {
+    width: auto;
+    margin: 0 0 4px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 0.845rem;
+}
+
+.source {
+    text-align: left;
+    font-size: 0.75rem;
+    width: 100%;
+    margin: 0 0;
+}

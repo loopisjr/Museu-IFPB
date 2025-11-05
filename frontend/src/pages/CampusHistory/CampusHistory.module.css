@@ -1,0 +1,35 @@
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+@media (min-width: 601px) {
+  .container {
+    padding: 32px;
+  }
+}
+
+@media (min-width: 1001px) {
+  .container {
+    padding: 70px;
+  }
+}
+
+@media (min-width: 1201px) {
+  .container {
+    padding: 45px 120px 45px 120px;
+  }
+}
+
+.imageCenter {
+  margin: 40px auto;
+  width: 100%;
+  max-width: 500px;
+  display: block;
+}
+
+h3 {
+    margin-top: 40px;
+}

@@ -1,0 +1,26 @@
+ul.referencesList {
+    list-style: none;
+    padding: 0;
+}
+
+
+ul.referencesList li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 15px;
+}
+
+ul.referencesList li strong {
+  word-break: break-word;
+}
+
+ul.referencesList li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 6px;
+    width: 10px;
+    height: 10px;
+    background-color: green;
+    transform: rotate(45deg);
+}

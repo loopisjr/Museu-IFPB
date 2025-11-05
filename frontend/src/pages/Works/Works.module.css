@@ -1,0 +1,37 @@
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+.headerText {
+  text-align: center;
+  margin-bottom: 24px; 
+}
+
+.headerText p {
+  margin-top: 8px;
+  margin-bottom: 0;
+  color: #444;
+  font-size: 1rem;
+}
+
+
+@media (min-width: 601px) {
+  .container {
+    padding: 32px;
+  }
+}
+
+@media (min-width: 1001px) {
+  .container {
+    padding: 70px;
+  }
+}
+
+@media (min-width: 1201px) {
+  .container {
+    padding: 45px 120px 45px 120px;
+  }
+}
