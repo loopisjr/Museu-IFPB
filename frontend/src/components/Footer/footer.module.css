@@ -2,38 +2,54 @@
   background-color: var(--secondary-color);
 }
 
-.footer>div {
+.footer > div {
   min-height: 67px;
   padding: 16px;
 
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center; 
+}
+
+.footer p {
+  margin: 0;
 }
 
 .loopis {
   font-size: 1rem;
   color: white;
+  margin-top: 8px; 
 }
-
 .redessociais {
   display: flex;
+  gap: 8px;
+  margin-top: 8px; 
 }
 
-.redessociais>img {
+.redessociais img,
+.redessociais a img {
   width: 35px;
   height: 35px;
+  display: block; 
 }
 
 @media (min-width: 768px) {
-  .footer>div {
-    padding-block: 0px;
-
+  .footer > div {
+    padding-block: 0;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center; 
+  }
+
+  .loopis {
+    margin-top: 0; 
+    margin-left: 16px; 
+    flex: 1; 
+    text-align: left; 
   }
 
   .redessociais {
+    margin-top: 0;
     gap: 12px;
   }
 }

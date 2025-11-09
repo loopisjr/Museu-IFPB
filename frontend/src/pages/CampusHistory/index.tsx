@@ -2,6 +2,7 @@ import Title from "../../components/Title"
 import ImageDescription from "../../components/ImageDescription"
 import Paragraph from "../../components/Paragraph/Paragraph";
 import Quote from "../../components/Quote/Quote";
+import { useEffect } from "react";
 const Figura1 = '/images/CampusHistory/Figura1.png';
 const Figura2 = '/images/CampusHistory/Figura2.png';
 const Figura3 = '/images/CampusHistory/Figura3.png';
@@ -17,6 +18,10 @@ const Figura12 = '/images/CampusHistory/Figura12.png';
 
 import styles from "./CampusHistory.module.css";
 export default function CampusHistory() {
+  useEffect(()=>{
+    document.title = "Histórico do Campus"
+  }, []);
+
   return (
     <div className={styles.container}>
       <Title content="Breve Histórico" />

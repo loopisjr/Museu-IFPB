@@ -2,8 +2,12 @@ import Timeline from "../../components/TimeLine";
 import DirectorsCard from "../../components/timelineCard";
 import Title from "../../components/Title";
 import style from './TimelinePage.module.css';
+import { useEffect } from "react";
 
 export default function TimelinePage() {
+  useEffect(()=>{
+    document.title = "Linha do Tempo"
+  }, []);
   return (
     <div className={style.content}>
       <Title content="Mapa Histórico do IFPB - Campus Cajazeiras" greenBarWidth="auto"/>

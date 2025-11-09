@@ -16,3 +16,11 @@
   gap: 1rem;
   padding: 1rem;
 }
+
+.author {
+  margin-top: 1rem;
+  font-style: italic;
+  font-weight: 300;
+  color: rgb(145, 145, 145);
+  text-align: right;
+}

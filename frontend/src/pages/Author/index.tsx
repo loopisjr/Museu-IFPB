@@ -1,9 +1,14 @@
 import style from "./author.module.css"
+import { useEffect } from "react"
 /* import facebook from "../../assets/icons/facebook-color.png"
 import instagram from "../../assets/icons/instagram-color.png"
 import linkedin from "../../assets/icons/linkedin-color.png" */
 
 export default function Author() {
+  useEffect(()=>{
+    document.title = "Autor"
+  }, []);
+  
   return (
     <div className={`${style.container} container`}>
       <img src="/images/author/cliente.jpg" alt="Autor" />

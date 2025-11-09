@@ -27,7 +27,7 @@ export default function Header() {
           </li>
           <LinkHeader label="Linha do tempo" path="/linha-do-tempo" />
           <LinkHeader label="Galeria" path="/galeria" />
-          <LinkHeader label="Questionario" path="/questionario" />
+          <LinkHeader label="Questionario" path="https://forms.gle/fdbpjSbeSEPeTz5C6" />
           <LinkHeader label="Obras" path="/obras" />
           <LinkHeader label="Autor" path="/autor" />
         </ul>
