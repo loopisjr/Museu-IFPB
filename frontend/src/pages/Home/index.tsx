@@ -2,8 +2,12 @@ import AboveTheFold from '../../components/AboveTheFold';
 import BannerCajazeiras from '../../components/BannerCajazeiras';
 import Title from '../../components/Title';
 import style from './home.module.css';
+import { useEffect } from 'react';
 
 export default function Home() {
+  useEffect(()=>{
+    document.title = "Home"
+  }, []);
   return (
     <div className={style.content}>
       <AboveTheFold title={'Memória e Formação'} pictureURL={'/images/GOPR0042.JPG'}>
@@ -16,6 +20,7 @@ export default function Home() {
         <Title margin={'auto'} content={'Sobre'} greenBarWidth='auto' />
         <p>Mais do que um repositório de informações, o material aqui disponibilizado propõe-se a colaborar para a preservação da memória institucional e para o fortalecimento dos vínculos que unem diferentes gerações de estudantes, servidores, trabalhadores e trabalhadoras terceirizadas, famílias e comunidade local.</p>
         <p>Preservar a história do Campus Cajazeiras é também fortalecer os vínculos entre as pessoas que aqui passaram e continuam passando, em diferentes tempos e contextos, compondo a história viva desta instituição pública. As histórias registradas neste ambiente digital refletem não apenas os marcos administrativos e pedagógicos, mas também as múltiplas experiências pessoais e coletivas vivenciadas por aqueles e aquelas que construíram e seguem construindo o cotidiano da instituição.</p>
+        <p className={style.author}>Autor(a): Ana Paula da Cruz</p>
       </div>
       <BannerCajazeiras
         title={'Campus Cajazeiras'}

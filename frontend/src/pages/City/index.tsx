@@ -5,6 +5,7 @@ import ImageDescription from "../../components/ImageDescription";
 import Reference from "../../components/Reference";
 import Quote from "../../components/Quote/Quote";
 import Title from "../../components/Title";
+import { useEffect } from "react";
 
 const textoBanner = `
 Cajazeiras é uma cidade situada no interior do estado da Paraíba, localizada na 
@@ -17,6 +18,9 @@ qual a localidade passou a se chamar Cajazeiras.
 import Paragraph from "../../components/Paragraph/Paragraph";
 
 export default function City() {
+    useEffect(()=>{
+        document.title = "Cajazeiras"
+    }, []);
   return (
     <div>
         <BannerCajazeiras title="Cajazeiras" subtitle="A cidade que ensinou a Paraíba a ler"

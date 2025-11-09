@@ -1,8 +1,12 @@
 import { BookCard } from "../../components/BookCard/BookCard";
 import style from "./Works.module.css";
 import Title from "../../components/Title/index";
+import { useEffect } from "react";
 
 export default function Works() {
+  useEffect(()=>{
+    document.title = "Trabalhos"
+  }, []);
   return (
     <div className={style.container}>
       <div className={style.headerText}>
@@ -18,7 +22,7 @@ export default function Works() {
         author="Ana Paula da Cruz"
         description="O Instituto Federal de Educação, Ciência e Tecnologia da Paraíba, Campus Cajazeiras, é fruto das aspirações da sociedade dos sertões do Rio Piranhas por conhecimento humano, profissionalizante, científico e tecnológico. A realização desse desejo iniciou-se por meio do Projeto de Lei n° 3305-A de 1984, implementado pelo então deputado federal Edme Tavares. Em 04 de dezembro de 1994, as portas se abrem: aconteceu a inauguração da Unidade de Ensino Descentralizada, sediada na cidade de Cajazeiras (UNED Cajazeiras), parte da Escola Técnica Federal da Paraíba. O presente trabalho traz à tona múltiplos olhares e rememorações de experiências de vida conectados aos seus 25 anos de história."
         inverted={false}
-        link="http://editora.ifpb.edu.br/ifpb/catalog/book/400"
+        link="https://editora.ifpb.edu.br/ifpb/catalog/series/memorias"
       />
     </div>
   );

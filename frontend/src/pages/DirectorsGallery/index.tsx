@@ -2,8 +2,12 @@ import Timeline from "../../components/TimeLine";
 import DirectorsCard from "../../components/timelineCard";
 import Title from "../../components/Title";
 import style from './DirectorsGallery.module.css';
+import { useEffect } from "react";
 
 export default function DirectorsGallery() {
+  useEffect(()=>{
+    document.title = "Galeria de diretores";
+  }, []);
   return (
     <div className={style.content}>
       <Title content="Galeria de diretores" greenBarWidth="auto"/>
