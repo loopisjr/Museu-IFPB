@@ -53,6 +53,14 @@ section {
     height: auto;
 }
 
+.author {
+    margin-top: 1rem;
+    font-style: italic;
+    font-weight: 300;
+    color: rgb(145, 145, 145);
+    text-align: right;
+  }
+
 @media (max-width: 1280px) {
     .textBlock {
         width: 100%;

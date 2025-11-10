@@ -24,6 +24,16 @@ export default function Works() {
         inverted={false}
         link="https://editora.ifpb.edu.br/ifpb/catalog/series/memorias"
       />
+
+      <BookCard
+        image="https://play.google.com/books/publisher/content/images/frontcover/k4o0EQAAQBAJ?fife=w240-h345"
+        tags={["Educação","Ciências Humanas"]}
+        title="Encontros de memórias: trajetórias do campus Cajazeiras em seus 30 anos"
+        author="Ana Paula da Cruz"
+        description="Ao completar 30 anos de atividades no campo da educação, ciência e tecnologia, o Campus Cajazeiras celebra um conjunto de experiências humanas e práticas de formação profissional que contribuíram diretamente para a transformação da vida de muitas pessoas. Jovens e adultos encontram seus espaços de  atuação profissional na sociedade a partir dos conhecimentos adquiridos e das conquistas alcançadas por este Campus."
+        inverted={false}
+        link="https://editora.ifpb.edu.br/ifpb/catalog/series/memorias"
+      />
     </div>
   );
 }
