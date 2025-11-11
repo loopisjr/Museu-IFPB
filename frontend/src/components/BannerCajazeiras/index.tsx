@@ -4,7 +4,6 @@ type BannerCajazeirasProps = {
     title: string,
     subtitle: string,
     description: string,
-    author?: string,
     pictureURL: string,
     pictureWidth?: string,    
     vertical_padding?: string,
@@ -18,7 +17,6 @@ function BannerCajazeiras({
     title, 
     subtitle, 
     description,
-    author, 
     pictureURL, 
     pictureWidth="500px",  
     altText,
@@ -34,7 +32,6 @@ function BannerCajazeiras({
                         <h1 className={style.title}>{title}</h1>
                         <p className={style.subtitle}>{subtitle}</p>
                         <p>{description}</p>
-                        <p className={style.author}>Autor(a): {author}</p>
                     </div>
                 </div>
                 
