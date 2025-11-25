@@ -18,15 +18,14 @@ export default function Home() {
       </AboveTheFold>
       <div className={style.textArea}>
         <Title margin={'auto'} content={'Sobre'} greenBarWidth='auto' />
-        <p>Mais do que um repositório de informações, o material aqui disponibilizado propõe-se a colaborar para a preservação da memória institucional e para o fortalecimento dos vínculos que unem diferentes gerações de estudantes, servidores, trabalhadores e trabalhadoras terceirizadas, famílias e comunidade local.</p>
-        <p>Preservar a história do Campus Cajazeiras é também fortalecer os vínculos entre as pessoas que aqui passaram e continuam passando, em diferentes tempos e contextos, compondo a história viva desta instituição pública. As histórias registradas neste ambiente digital refletem não apenas os marcos administrativos e pedagógicos, mas também as múltiplas experiências pessoais e coletivas vivenciadas por aqueles e aquelas que construíram e seguem construindo o cotidiano da instituição.</p>
-        <p className={style.author}>Autor(a): Ana Paula da Cruz</p>
+        <p>Mais do que um repositório de informações, o material aqui apresentado busca contribuir para a valorização da memória institucional do Campus Cajazeiras do IFPB e para o fortalecimento dos vínculos que conectam diferentes gerações de estudantes, servidores e servidoras, trabalhadores e trabalhadoras terceirizados, famílias e comunidade local.</p>
+        <p>Escrever sobre a história do Campus Cajazeiras é também fortalecer os laços entre as pessoas que aqui passaram e continuam vivenciando seus espaços, em diferentes tempos e contextos, compondo a história viva desta instituição pública. As memórias registradas neste ambiente digital refletem não apenas marcos administrativos e pedagógicos, mas também as múltiplas experiências institucionais vivenciadas por aqueles e aquelas que participaram, e ainda participam, da construção do cotidiano educacional deste campus, situado no Alto Sertão da Paraíba.</p>
       </div>
       <BannerCajazeiras
         title={'Campus Cajazeiras'}
         subtitle={''}
         className={style.container}
-        description={'O Campus Cajazeiras, ao longo de sua história, tem cumprido sua missão de oferecer formação profissional de qualidade, mas também de ser espaço de formação para a vida, promovendo o desenvolvimento de competências humanas, cidadãs e sociais. Contribui-se, assim, não só para o registro histórico, mas também para o fortalecimento da identidade institucional e para a valorização das experiências que aqui se entrelaçam, formando pessoas não apenas para o mundo do trabalho, mas para a vida em sociedade.'}
+        description={'Ao longo de sua trajetória, o Campus Cajazeiras tem cumprido sua missão de oferecer formação profissional de qualidade e de constituir-se como espaço de desenvolvimento humano, cidadão e social. Desse modo, contribui não apenas para o registro histórico de sua identidade, mas também para o fortalecimento da institucionalidade e para a valorização das experiências que aqui se entrelaçam, formando pessoas não apenas para o mundo do trabalho, mas para a vida em sociedade.'}
         pictureURL={'/images/GOPR0042.JPG'}
         altText={'Fachada do Instituto Federal da Paraíba – Campus Cajazeiras, com prédio de tijolos à vista e concreto, entrada central envidraçada, ladeada por jardins bem cuidados com flores vermelhas e palmeiras, sob um céu parcialmente nublado.'}
       />
