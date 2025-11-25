@@ -17,7 +17,11 @@ export default function Home() {
         </>
       </AboveTheFold>
       <div className={style.textArea}>
-        <Title margin={'auto'} content={'Sobre'} greenBarWidth='auto' />
+        <Title margin={'auto'} content={'Origem do projeto'} greenBarWidth='auto' />
+        <p>O presente site, voltado ao registro das memórias e da história institucional do Campus Cajazeiras, é resultado de uma pesquisa desenvolvida no âmbito da elaboração de um produto educacional vinculado ao Mestrado Profissional em Educação Profissional e Tecnológica. Ao mesmo tempo, apresenta-se como uma ferramenta pedagógica de apoio ao ensino, à pesquisa e à extensão, ampliando o acesso à história e às memórias do Campus e possibilitando novas formas de reconhecimento de seu percurso institucional.</p>
+      </div>
+      <div className={style.textArea}>
+        <Title margin={'auto'} content={'Objetivos'} greenBarWidth='auto' />
         <p>Mais do que um repositório de informações, o material aqui apresentado busca contribuir para a valorização da memória institucional do Campus Cajazeiras do IFPB e para o fortalecimento dos vínculos que conectam diferentes gerações de estudantes, servidores e servidoras, trabalhadores e trabalhadoras terceirizados, famílias e comunidade local.</p>
         <p>Escrever sobre a história do Campus Cajazeiras é também fortalecer os laços entre as pessoas que aqui passaram e continuam vivenciando seus espaços, em diferentes tempos e contextos, compondo a história viva desta instituição pública. As memórias registradas neste ambiente digital refletem não apenas marcos administrativos e pedagógicos, mas também as múltiplas experiências institucionais vivenciadas por aqueles e aquelas que participaram, e ainda participam, da construção do cotidiano educacional deste campus, situado no Alto Sertão da Paraíba.</p>
       </div>
